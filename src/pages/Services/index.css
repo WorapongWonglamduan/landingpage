@@ -1,0 +1,13 @@
+.service-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.service-section .download-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #0866ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
