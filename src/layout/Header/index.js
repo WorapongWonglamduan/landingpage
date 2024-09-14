@@ -22,7 +22,7 @@ const Index = () => {
       <nav className="navbar">
         {sectionAll.map(({ title }, index) => {
           return (
-            <a href="#" style={{ "--i": index }}>
+            <a href={`#${title.toLowerCase()}`} style={{ "--i": index }}>
               {title}
             </a>
           );

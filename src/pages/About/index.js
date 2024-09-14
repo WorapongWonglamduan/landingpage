@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 const Index = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="row">
         <div className="col-6">
           <h1>About </h1>
@@ -19,7 +19,13 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="col-6"></div>
+        <div className="col-6">
+          <img
+            src={require("../../assets/image/food-8.png")}
+            alt="Food"
+            className="img"
+          />
+        </div>
       </div>
     </div>
   );
