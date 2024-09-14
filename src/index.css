@@ -51,23 +51,33 @@ p {
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
+  align-items: center;
 }
 
 .col-6 {
   flex: 1 1 calc(50% - 10px);
+  padding: 1.5rem;
 }
 
 .col-4 {
   flex: 1 1 calc(30% - 20px);
+  padding: 1.5rem;
+}
+@media (min-width: 2100px) {
+  .col-6 {
+    flex: 1 1 calc(50% - 10px);
+  }
 }
 
 @media (max-width: 768px) {
   .col-6 {
     flex: 1 1 calc(100% - 20px);
+    padding: 0;
   }
 
   .col-4 {
     flex: 1 1 calc(50% - 20px);
+    padding: 0;
   }
 }
 
@@ -75,6 +85,7 @@ p {
   .col-6,
   .col-4 {
     flex: 1 1 calc(100% - 20px);
+    padding: 0;
   }
 }
 
