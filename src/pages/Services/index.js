@@ -2,16 +2,20 @@ import React from "react";
 import "./index.css";
 const index = () => {
   return (
-    <section id="services" className="service-section">
+    <section id="services" className="service">
       <h2>Discover Our Services</h2>
       <p>We provide the best food delivery service. Download our app now!</p>
-      <div className="row">
-        <div className="col-4">WORAPONG</div>
-        <div className="col-4">WORAPONG</div>
-        <div className="col-4">WORAPONG</div>
+
+      <div>
+        <img
+          src={require("../../assets/image/mobile-food-app.png")}
+          alt="Food"
+          className="img-mobile-food"
+        />
       </div>
+
       <button className="download-btn">
-        <h5>Download App</h5>
+        <span>Download App</span>
       </button>
     </section>
   );

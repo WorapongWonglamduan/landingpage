@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 
 const Index = () => {
+  const [scrolled, setScrolled] = useState(false);
   const sectionAll = [
     { title: "Home" },
     { title: "About" },
     { title: "Services" },
     { title: "Contact" },
   ];
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
 
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   return (
-    <header className="header">
+    <header className={`header  ${scrolled ? "scrolled" : ""}`}>
       <a href="#" className="logo">
         Logo
       </a>

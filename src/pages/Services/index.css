@@ -1,19 +1,73 @@
-.service-section {
+.service {
   text-align: center;
   padding: 10rem;
 }
 
-.service-section .download-btn {
+.download-btn {
+  position: relative;
+  margin-top: 2rem;
   padding: 1.5rem 2.5rem;
   font-size: 1rem;
-  background-color: #0866ff;
+  background-color: #333;
   color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 2rem;
   transition: background-color 0.3s ease-in-out;
+  overflow: hidden;
 }
 
-.service-section .download-btn:hover {
-  background-color: #0d3a81;
+.download-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #646464;
+  transition: width 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.download-btn:hover::before {
+  width: 100%;
+}
+
+.download-btn span {
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.download-btn:hover {
+  color: #fff;
+  background-color: #333; /* ไม่เปลี่ยนสีหลักขณะ hover */
+}
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: box-shadow 0.3s ease-in-out;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.img-mobile-food {
+  margin-top: 2rem;
+}
+@media (max-width: 769px) {
+  .service {
+    padding: 5rem;
+  }
+  .profile-img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+  }
 }

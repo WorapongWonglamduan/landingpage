@@ -3,13 +3,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.3rem 10%;
+  padding: 2.5rem 10%;
   background-color: #333;
-
   align-items: center;
   display: flex;
   justify-content: space-between;
   z-index: 100;
+  transition: 0.32s ease-in-out;
+}
+.header.scrolled {
+  padding: 2rem 8%;
 }
 .header::before {
   content: "";
@@ -22,14 +25,14 @@
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
 }
 
 .navbar a {
-  font-size: 1.15rem;
+  font-size: 1.7rem;
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;

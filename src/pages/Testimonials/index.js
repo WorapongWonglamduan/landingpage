@@ -22,11 +22,12 @@ const index = () => {
           </p>
           <div className="wrap-profile">
             <img
-              src={require("../../assets/image/food-9.png")}
+              src={require("../../assets/image/avatar.jpg")}
               alt="Food"
               className="profile-img"
             />
-            <h4>worapong</h4>
+            <h5>Anders Hytter</h5>
+            <h6>2 days ago</h6>
           </div>
         </div>
       </div>
