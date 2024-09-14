@@ -1,16 +1,41 @@
 .gallery {
-  padding: 2rem;
+  padding: 5rem 2rem;
   text-align: center;
+  background-color: aliceblue;
 }
 
 .gallery-images {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
 
 .gallery-images img {
-  width: 200px;
-  height: 150px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .gallery-images {
+    gap: 0.5rem;
+  }
+
+  .gallery-images img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-images {
+    gap: 0.25rem;
+  }
+
+  .gallery-images img {
+    max-width: 200px;
+  }
 }

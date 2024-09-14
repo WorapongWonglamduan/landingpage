@@ -4,7 +4,7 @@ const Index = () => {
   return (
     <div className="about">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-6">
           <h1>About </h1>
           <h3>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -18,7 +18,8 @@ const Index = () => {
             necessitatibus neque nobis officia sequi.
           </p>
         </div>
-        <div className="col-md-6"></div>
+
+        <div className="col-6"></div>
       </div>
     </div>
   );

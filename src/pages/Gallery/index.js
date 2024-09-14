@@ -5,9 +5,10 @@ const index = () => {
     <section className="gallery">
       <h2>Delicious Food Gallery</h2>
       <div className="gallery-images">
-        <img src="food1.jpg" alt="Food 1" />
-        <img src="food2.jpg" alt="Food 2" />
-        <img src="food3.jpg" alt="Food 3" />
+        <img src={require("../../assets/image/food-1.png")} alt="Food" />
+        <img src={require("../../assets/image/food-2.png")} alt="Food" />
+        <img src={require("../../assets/image/food-3.png")} alt="Food" />
+        <img src={require("../../assets/image/food-4.png")} alt="Food" />
       </div>
     </section>
   );

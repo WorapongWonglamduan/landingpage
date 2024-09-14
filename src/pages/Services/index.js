@@ -3,9 +3,12 @@ import "./index.css";
 const index = () => {
   return (
     <section id="services" className="service-section">
-      <h1>Discover Our Services</h1>
+      <h2>Discover Our Services</h2>
       <p>We provide the best food delivery service. Download our app now!</p>
-      <button className="download-btn">Download App</button>
+
+      <button className="download-btn">
+        <h5>Download App</h5>
+      </button>
     </section>
   );
 };
