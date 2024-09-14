@@ -68,7 +68,7 @@ const index = () => {
                 </a>
               </li>
               <li>
-                <a href="#service" className="nav-link">
+                <a href="#services" className="nav-link">
                   service
                 </a>
               </li>
