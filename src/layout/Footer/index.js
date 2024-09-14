@@ -7,7 +7,7 @@ const index = () => {
         <div className="row">
           <div className="col-3 me-auto">
             {/* <a href="#home"> */}
-            <h3 href="#home">LOGO</h3>
+            <h3 href="#home">Food Delivery</h3>
             <span>for food lovers</span>
             {/* </a> */}
 
@@ -55,7 +55,7 @@ const index = () => {
           </div>
 
           <div className="col-2">
-            <h5>Company</h5>
+            <h5>Food Delivery</h5>
             <ul className="nav">
               <li>
                 <a href="#home" className="nav-link">
@@ -80,7 +80,7 @@ const index = () => {
             </ul>
           </div>
 
-          <div className="col-2">
+          {/* <div className="col-2">
             <h5>Account</h5>
             <ul className="nav flex-column">
               <li className="nav-item">
@@ -99,8 +99,8 @@ const index = () => {
                 </a>
               </li>
             </ul>
-          </div>
-
+          </div> */}
+          {/* 
           <div className="col-2">
             <h5>Legal</h5>
             <ul className="nav flex-column">
@@ -125,7 +125,7 @@ const index = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <hr />
         <p>© 2024Limited – All Rights Reserved</p>

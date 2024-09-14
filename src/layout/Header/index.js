@@ -21,7 +21,7 @@ const Index = () => {
   return (
     <header className={`header  ${scrolled ? "scrolled" : ""}`}>
       <a href="#" className="logo">
-        Logo
+        Food Delivery
       </a>
       <input type="checkbox" id="check" />
       <label htmlFor="check" className="icons">
