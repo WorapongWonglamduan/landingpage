@@ -14,6 +14,7 @@
 .header.scrolled {
   padding: 2rem 8%;
 }
+
 .header::before {
   content: "";
   position: absolute;
@@ -54,6 +55,9 @@
 @media (max-width: 992px) {
   .header {
     padding: 1.3rem 5%;
+  }
+  .logo {
+    font-size: 2rem;
   }
 }
 @media (max-width: 768px) {
